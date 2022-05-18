@@ -28,6 +28,24 @@
 				position: absolute;
 				z-index: 1000;
 			}
+			.spinner {
+ 				 animation-name: spinner;
+ 				 animation-timing-function: linear;
+ 				 animation-iteration-count: infinite;
+ 				 animation-duration: 3s;
+ 				 transform-style: preserve-3d;
+ 				 text-align:center;
+				 font-size: 100px
+			}
+			@keyframes spinner {
+ 				 from {
+   				 transform: rotateY(0deg);
+  				}
+  				to {
+    				transform: rotateY(-360deg);
+ 				 }
+			}
+
 		</style>
 		<script>
 			function run() {
@@ -47,5 +65,8 @@
 			Despite making up only 13% of the population, blacks make up 52% of crimes.
 
 		</p>
+		<p class="spinner">
+		<marquee style= color:blueviolet;> GAMING</marquee>"
+		</p> 
 	</body>
 </html>
