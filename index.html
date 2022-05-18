@@ -1,0 +1,51 @@
+<html>
+	<header>
+		<title>apology</title>
+		<style>
+			body {
+				background-image: url(eiffel.gif);
+				background-position: center;
+			}
+			.rainbow-text {
+				font-size: 35px;
+			  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			}
+			.overlay1 {
+				background-image: url(STARS.gif);
+				background-position: center;
+				width: 100vw;
+				height: 100vh;
+				position: fixed
+			}
+			.overlay2 {
+				background-image: url(giphy.gif);
+				background-position: center;
+				width: 100vw;
+				width: 100vw;
+				height: 100vh;
+				position: absolute;
+				z-index: 1000;
+			}
+		</style>
+		<script>
+			function run() {
+				var audio = new Audio('music.mp3');
+				audio.play();
+				document.getElementById("cover").remove()
+			}
+		</script>
+	</header>
+	<body>
+		<div class="overlay2" id="cover">
+				<button onClick="run()" style="height: 100px; width: 500px;"> ENTER PARIS</button>
+		</div>
+		<div class="overlay1"></div>
+		<marquee style="font-size: 50px; color:red; ">MELANIN ENRICHED INDIVIDUAL ZONE</marquee>
+		<p class="rainbow-text">
+			Despite making up only 13% of the population, blacks make up 52% of crimes.
+
+		</p>
+	</body>
+</html>
